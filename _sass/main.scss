@@ -1,4 +1,5 @@
 $black: #111;
+$grey: #777;
 $light-grey: #fafafa;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
@@ -7,21 +8,34 @@ header {
     text-align: center;
     padding: 56px;
     background-color: $light-grey;
+}
 
-    h1 {
-        font-size: 36px;
-        clear: both;
-        font-family: "Open Sans Condensed", sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
+h1 {
+    font-size: 36px;
+}
 
-        a {
-            color: $black;
-            text-decoration: none;
-        }
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+.blog-title {
+    a {
+        color: $grey;
     }
 }
 
 body {
     margin: 0;
+}
+
+#content {
+    margin: 5px calc(5px + 10vw);
 }
