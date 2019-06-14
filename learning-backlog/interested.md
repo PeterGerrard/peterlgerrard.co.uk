@@ -18,3 +18,8 @@ Here are a list of things I might look at, and possible resources to use:
 - Kubernetes
   - https://kubernetes.io/docs/tutorials/kubernetes-basics/
 - Message Busses on a service mesh
+- Security Headers, Report URIS
+  - https://securityheaders.com/
+  - https://report-uri.com/
+  - May as well stick them on this site
+    - https://securityheaders.com/?q=www.peterlgerrard.co.uk&followRedirects=on
