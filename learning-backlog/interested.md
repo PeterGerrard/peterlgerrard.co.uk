@@ -23,3 +23,4 @@ Here are a list of things I might look at, and possible resources to use:
   - https://report-uri.com/
   - May as well stick them on this site
     - https://securityheaders.com/?q=www.peterlgerrard.co.uk&followRedirects=on
+    - https://tomssl.com/2016/06/30/how-to-fix-the-http-response-headers-on-azure-web-apps-to-get-an-a-plus-on-securityheaders-io/
