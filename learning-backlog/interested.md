@@ -1,3 +1,6 @@
+---
+layout: default
+---
 Here are a list of things I might look at, and possible resources to use:
 
 ## Next
