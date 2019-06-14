@@ -11,3 +11,8 @@ pagination:
   permalink: '/page/:num/'
   sort_field: 'date'
   sort_reverse: true
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+      start_line: 1

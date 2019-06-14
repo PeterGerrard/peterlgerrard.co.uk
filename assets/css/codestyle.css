@@ -105,3 +105,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
 .highlight pre .sr { color: #a31515 } /* Literal.String.Regex */
 .highlight pre .s1 { color: #a31515 } /* Literal.String.Single */
 .highlight pre .ss { color: #a31515 } /* Literal.String.Symbol */
+
+.rouge-gutter .lineno {
+    text-align: right;
+    padding: 0 0.5em 0 1em;
+    border-right:3px solid #6ce26c;
+    color: #afafaf;
+}
+
+.rouge-code {
+    padding: 0 1em;
+}
