@@ -1,0 +1,7 @@
+title: Security Headers, Report URIS
+resources:
+  - https://securityheaders.com/
+  - https://report-uri.com/
+  - https://securityheaders.com/?q=www.peterlgerrard.co.uk&followRedirects=on
+  - https://tomssl.com/2016/06/30/how-to-fix-the-http-response-headers-on-azure-web-apps-to-get-an-a-plus-on-securityheaders-io/
+details: May as well done it on this site
