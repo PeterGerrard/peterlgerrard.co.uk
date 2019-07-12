@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+{{ page.details }}
+<h3>Resources</h3>
+<ul>
+{% for resource in page.resources %}
+<li><a href="{{resource}}" target="_blank">{{ resource }}</a></li>
+{% endfor %}
+</ul>

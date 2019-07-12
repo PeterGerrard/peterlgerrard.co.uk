@@ -12,6 +12,8 @@ Here are a list of things I might look at, and possible resources to use:
 {% for resource in next.resources %}
 - {{ resource }}
 {% endfor %}
+
+[Permalink]({{ next.title | datapage_url: "item" }})
 {% endfor %}
 
 # Possible
@@ -23,6 +25,8 @@ Here are a list of things I might look at, and possible resources to use:
 {% for resource in possible.resources %}
 - {{ resource }}
 {% endfor %}
+
+[Permalink]({{ possible.title | datapage_url: "item" }})
 {% endfor %}
 
 # Unranked
@@ -34,4 +38,6 @@ Here are a list of things I might look at, and possible resources to use:
 {% for resource in unranked.resources %}
 - {{ resource }}
 {% endfor %}
+
+[Permalink]({{ unranked.title | datapage_url: "item" }})
 {% endfor %}

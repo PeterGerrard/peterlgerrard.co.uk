@@ -16,3 +16,24 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+page_gen:
+  - data: learningbacklog.done
+    name: title
+    template: learning-backlog-item
+    dir: learning-backlog/item
+  - data: learningbacklog.investigating
+    name: title
+    template: learning-backlog-item
+    dir: learning-backlog/item
+  - data: learningbacklog.interested.next
+    name: title
+    template: learning-backlog-item
+    dir: learning-backlog/item
+  - data: learningbacklog.interested.possible
+    name: title
+    template: learning-backlog-item
+    dir: learning-backlog/item
+  - data: learningbacklog.interested.unranked
+    name: title
+    template: learning-backlog-item
+    dir: learning-backlog/item

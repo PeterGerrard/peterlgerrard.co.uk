@@ -12,4 +12,6 @@ Here are the things I am currently looking at:
 {% for resource in investigating.resources %}
 - {{ resource }}
 {% endfor %}
+
+[Permalink]({{ investigating.title | datapage_url: "item" }})
 {% endfor %}
