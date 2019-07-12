@@ -19,7 +19,7 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'jekyll build --verbose'
+    containerCommand: 'bundle exec jekyll build --verbose'
     detached: false
 - task: PublishBuildArtifacts@1
   inputs:
