@@ -20,7 +20,7 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/app
       $(build.binariesDirectory):/app/_site
-    containerCommand: 'bundle exec jekyll build --verbose'
+    containerCommand: 'sh -c "gem install bundler:2.0.1 && bundle install && bundle exec jekyll build --verbose"'
     detached: false
 - task: PublishBuildArtifacts@1
   inputs:
