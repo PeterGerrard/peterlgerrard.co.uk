@@ -16,7 +16,7 @@ steps:
     containerRegistryType: 'Container Registry'
     action: 'Run an image'
     imageName: 'ruby:2.6.3'
-    workingDirectory: /app
+    workDir: /app
     volumes: |
       $(build.sourcesDirectory):/app
       $(build.binariesDirectory):/app/_site
