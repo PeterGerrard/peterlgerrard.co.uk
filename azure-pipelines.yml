@@ -16,9 +16,10 @@ steps:
     containerRegistryType: 'Container Registry'
     action: 'Run an image'
     imageName: 'ruby:2.6.3'
+    workingDirectory: /app
     volumes: |
-      $(build.sourcesDirectory):/srv/jekyll
-      $(build.binariesDirectory):/srv/jekyll/_site
+      $(build.sourcesDirectory):/app
+      $(build.binariesDirectory):/app/_site
     containerCommand: 'bundle exec jekyll build --verbose'
     detached: false
 - task: PublishBuildArtifacts@1
