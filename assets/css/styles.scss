@@ -1,3 +1,41 @@
 ---
 ---
-@import "main"
+@import "main";
+
+header {
+    h1 {
+        margin-block-start: 0;
+        margin-block-end: 0; 
+        padding-block-start: 0.67em;
+        padding-block-end: 0.67em; 
+    }
+
+    nav {
+        background-color: #333;
+        text-align: left;
+        padding-left: calc(5px + 10vw);
+        padding-right: calc(5px + 10vw);
+
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                a {
+                    padding: 14px 16px;
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: #111;
+                }
+            }
+        }
+    }
+
+    padding: 0;
+}
