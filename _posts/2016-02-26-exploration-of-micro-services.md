@@ -6,15 +6,15 @@ Once again I am making changes to my EV Tracker project. This time I am looking 
 
 Before I go much further, a quick disclaimer. This transformation was not complete, just done to a point where I could see how everything would be implemented and could add new features with ease. Also I did nothing about port detection, relying solely on hard coded web calls. But that is something I may tackle in future.
 
-#### Choices of Services
+## Choices of Services
 
 My choice of services was done by, "Oh, I need to get this set information to display. Guess I'll create a service to be able to ask that question". This ended up roughly being one service per model. This may be overkill in certain situations, it would be best to have one service for each model the UI needs to ask about, and one for each model that multiple services need to store/get info about.
 
-#### What ended up in the UI
+## What ended up in the UI
 
 In the end my UI was really dumb, I used knockout.js to handle drawing the UI based on my current state. Clicking any button in the UI would send a request to the main Pokémon service and would receive back a new json model of the tracked Pokémon. This would then just overwrite the current data and knockout would redraw everything as necessary. If you want to review the UI code you can look [here](https://github.com/PeterGerrard/EVTracker/tree/HttpServices/Pokemon.EVTracker.Html).
 
-#### What about the services?
+## What about the services?
 
 Most of the services were dumb and just stored a json file describing their particular models and served that when asked. The only one of note was the Pokémon service as it required talking to multiple services and manipulating the stored data. Fortunately for me ASP Net Core makes it really easy to send and receive C# objects via REST Apis, particularly with the HttpContent Extension `ReadAsAsync<T>()` method. To get the actual species data for one of my Pokémon in an easy manner, all I had to do is a simple call and read.
 
@@ -28,7 +28,7 @@ using (var httpClient = new HttpClient())
 
 This is the closest to complex code that I had to add due to splitting stuff out.
 
-#### Final Thoughts
+## Final Thoughts
 
 In a word **boilerplate**, perhaps this is because this is still a toy example. But the amount of boiler plate code I had easily dwarfs the code that actually does stuff.
 

@@ -4,13 +4,13 @@ tags: []
 ---
 And now for the *fun* of implementing a new UI. Surely this will be easy, oh how I was mistaken. First thing I decided to do was to create a Control that displays a single pokÃ©mon, this was originally part of Page but splitting it out would be easiest. It would show the current pokémon details and allow you to manually update level, effort values and individual values.
 
-#### Final Prep work
+## Final Prep work
 
 Having some small experience with WPF prior to this conversion I knew that `INotifyPropertyChanged` is instrumental when binding to a wpf control. So I went and made `Pokémon` implement the interface. I use ReSharper and it gave me a handy shortcut to make all my properties call PropertyChanged. Something I forgot at this point but soon found out was I needed to observe the values in the dictionaries and not just the dictionaries so I went and found a nice NuGet package that did this (MVVMHelpers).
 
 To check that I hadn't messed this up, I got my Page class to use the PropertyChanged event on Pokémon to UpdateTheForm rather than manually updating every single time I made a change to Pokémon.
 
-#### Creating my first Wpf Control
+## Creating my first Wpf Control
 
 For simplicity I created this as part of the Main Window, and once it was working moved it to a Control, so there were less possible causes for any issues.
 
@@ -44,7 +44,7 @@ And then displaying the image was as simple as binding to the Source property an
 <Image Source="{Binding Path=Species.DexNumber, Converter={StaticResource DexNumberToSource}}" DockPanel.Dock="Right"></Image>
 ```
 
-#### Now to show some useful information<
+## Now to show some useful information<
 
 The next part of the screen I aimed to display was the Pokémon's stat grid, that is the base value, individual value, effort value and current value for each of the six stats. This grid, it turns out, was very easy to set up, with the changes I had made to Pokémon updating any of the values, would update the associated calculated values.
 

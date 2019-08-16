@@ -8,7 +8,7 @@ Recently I wanted to have a go at creating a WPF app so I thought I'd crack this
 
 Now I had a code base I could work on it was time to get cracking. But I immediately hit several problems: I had no tests, had static managers, the form was also a bit unwieldy as it contains all the logic for updating the views. So I decided to start with the low hanging fruit.
 
-#### Fixing some low hanging fruit
+## Fixing some low hanging fruit
 My first pick of the fruit was to have a pass at all my ReSharper squiggles. This was mostly moving files and removing unused code. But it helped to remind me what the classes were and roughly what they were for. I then noticed I was not using the `using` pattern when serializing stuff to files, so I quickly did that.
 
 About now I start cursing my younger self for not having any tests. So, I decided to look at adding tests, but I found this very hard with my current set up so I went back to safe changes with the mindset of making it testable, or at least making it so the UI was really dumb.
@@ -17,7 +17,7 @@ Interspersed with ReSharper fixes I also made the manager non static, then got r
 
 This is when I spotted a nasty piece of UI code I decided I could safely change with just quick manual tests.
 
-#### Creating tab pages
+## Creating tab pages
 Part of the UI has tab pages that relate to a single tracked pokemon, and you can have many of these tabs. And the code for producing these pages was, of course, entirely in the Form class. So out it came into its own class, it still had a bunch of problems but it was starting to look like a combined WPF control and model. This was mostly pain free, and actually reduced the number of lookups needed as each tab page could look after itself rather than the form needing to work out the correct stuff knowing what the current page is.
 
 Previously had something akin to:
@@ -51,5 +51,5 @@ private void UpdateStat(int statIncrease, NumericUpDown numericUpDown)
 }
 ```
 
-#### Summary
+## Summary
 Well, this is going to take longer than I thought but at least its fodder for blogging about. You can see the code as it stood after my first session on [GitHub](https://github.com/PeterGerrard/EVTracker/tree/2055ab43a5008ec5f3acfd6c1dab9936d0d814cf), the code is in a slightly better state, but for the User the only change is there is no longer an installer. Next up, the form should not be dealing with loading of a file, so lets stop that.
