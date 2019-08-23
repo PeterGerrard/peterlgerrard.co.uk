@@ -1,0 +1,4 @@
+title: Registering services on Consul
+resources:
+  - https://learn.hashicorp.com/consul/getting-started/services
+details: 'Overall I could follow the examples and was able to connect to the service from another machine. But without a proper project was hard to really say I understand it. So I want a larger project, and that seems a good chance to also look at Kubernetes'
