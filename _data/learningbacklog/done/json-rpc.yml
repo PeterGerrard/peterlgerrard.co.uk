@@ -1,0 +1,5 @@
+title: JSON RPC for command lines
+resources:
+  - https://github.com/Microsoft/vs-streamjsonrpc/
+  - https://github.com/Microsoft/vscode-languageserver-node
+details: I was talked through how this works by Ian Johnson (https://ninjaferret.co.uk/) who had some experience with it. And its basically a communication process between two processes (you can use http/pipes/stdin etc.) that just sends json blobs that are interpreted on the other side. My personal prefernce for how to use this is the case where you want a long running service as a commandline and needed to send requests like its a web server. I would then do routing and call controllers rather than doing direct remote procedure calls.
