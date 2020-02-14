@@ -1,0 +1,17 @@
+title: Kubernetes
+resources:
+  - https://training.linuxfoundation.org/training/introduction-to-kubernetes/
+  - https://kubernetes.io/docs/tutorials/kubernetes-basics/
+  - https://istio.io/docs/setup/getting-started/
+  - https://micro-frontends.org/
+  - https://www.martinfowler.com/articles/micro-frontends.html
+  - https://helm.sh/
+details: |-
+  This ended up being quite a long running project that touched on many things:
+    - Istio and service meshes
+    - Kind/Minikube, how to do local development. Even looked a bit at Azure Dev Spaces
+    - Micro frontends and how to create a single UI from multiple services
+    - Helm and how to update kubernetes
+    - Database Deployments
+  As well as implementing the above I also thought about but never implemented:
+    - Dependency Inversion of services, and how each service should not rely on the existence of others

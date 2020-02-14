@@ -1,5 +1,0 @@
-title: Kubernetes
-resources:
-  - https://training.linuxfoundation.org/training/introduction-to-kubernetes/
-  - https://kubernetes.io/docs/tutorials/kubernetes-basics/
-details: Started to work out the basics, but I'd like to actually build an app that leverages being in Kubernetes
